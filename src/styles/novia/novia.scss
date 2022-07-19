@@ -1,0 +1,214 @@
+.Novia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    height: 100%;
+    &-header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #DC7C0B;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        img{
+            max-width: 100%;
+        }
+    }
+    &-nav{
+        width: 80%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    &-title{
+        color: #fff;
+    }
+
+    &-container{
+        display: flex;
+    }
+    &-menu{
+        position:fixed;
+        top:90px;
+        left: 0px;
+        width:0px;
+        height: 800px;
+        background-color: #fff;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 14px 14px 23px -11px rgba(0,0,0,0.53);
+        -moz-box-shadow: 14px 14px 23px -11px rgba(0,0,0,0.53);
+        box-shadow: 14px 14px 23px -11px rgba(0,0,0,0.53);
+    }
+    &-menuActive{
+        width:200px;
+        transition: all 0.3s ease-in-out;
+    }
+    &-ul{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    &-li{
+        width: 80%;
+        height: 200px;
+        list-style-type: none;
+        border-bottom: 1px solid #C9C6C6;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 6px;
+        cursor: pointer;
+        &:hover{
+            background-color: #DC7C0B;
+            
+            a{
+                color: #fff;    
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #908C8C;
+        }
+      
+       
+        
+        
+    }
+    &-iconMenu{
+        cursor: pointer;
+    }
+    &-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin-top: 95px;
+    }
+
+    &-cards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin:  2rem 0;
+    }
+    &-card{
+        width: 270px;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+    }
+    &-h3{
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+    &-h4{
+        font-size: 18px; 
+        text-align: center;
+        margin: 0;
+    }
+    &-cardTextO{
+        color: #DC7C0B;
+        text-align: center;
+    }
+    &-cardTextG{
+        color: #3EA40E;
+        text-align: center;
+    }
+    &-cardTextR{
+        color: #DC0B0B;
+        text-align: center;
+    }
+    &-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 270px;
+        padding: 1rem;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 5px;
+        p{
+            margin: 0;
+        }
+    }
+    &-itemText{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    &-barra{
+        width: 270px;
+        height: 8px;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+    }
+    &-barraPorcentaje{
+        width: 200px;
+        height: 8px;
+        background-color: #FDC878;
+        border-radius: 5px;
+    }
+    &-barraComplete{
+        width: 270px;
+        height: 8px;
+        background-color: #A6F1B6;
+        border-radius: 5px;
+    }
+    &-check{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+    }
+    &-respuestas{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@include breakpoint('medium-simple') {
+    .Novia{
+
+    }
+}
+
+@include breakpoint('medium') {
+
+}
+
+@include breakpoint('medium-tablet') {
+    
+}

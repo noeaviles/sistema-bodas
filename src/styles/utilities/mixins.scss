@@ -1,0 +1,23 @@
+/*Mixin BreakPoints*/
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == 'medium-simple' {
+      @media (min-width: $bp-new-medium-simple) {
+        @content;
+        /*640px*/
+      }
+    }
+    @else if $breakpoint == 'medium' {
+      @media (min-width: $bp-new-medium) {
+        @content;
+        /*768px*/
+      }
+    }
+    @else if $breakpoint == 'medium-tablet' {
+      @media (min-width: $bp-new-medium-tablet) {
+        @content;
+        /*880px*/
+      }
+    }
+  }
+
+
