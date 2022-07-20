@@ -1,0 +1,40 @@
+.GlobalForm{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    &-pregunta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+    &-label{
+        display: flex;
+        align-items: center;
+    }
+    &-icono{
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        img{
+            width: 20px;
+        }
+    }
+    &-input{
+        width: 280px;
+        height: 40px;
+        border: 2px solid #AAAAAA;
+        border-radius: 5px;
+    }
+    &-button{
+        width: 150px;
+        height: 40px;
+        background-color: #DC7C0B;
+        border: none;
+        color: #fff;
+        margin-top: 1.5rem;
+    }
+}
