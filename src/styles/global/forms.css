@@ -1,0 +1,62 @@
+.GlobalForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.GlobalForm-pregunta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.GlobalForm-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.GlobalForm-icono {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.GlobalForm-icono img {
+  width: 20px;
+}
+
+.GlobalForm-input {
+  width: 280px;
+  height: 40px;
+  border: 2px solid #AAAAAA;
+  border-radius: 5px;
+}
+
+.GlobalForm-button {
+  width: 150px;
+  height: 40px;
+  background-color: #DC7C0B;
+  border: none;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+/*# sourceMappingURL=forms.css.map */

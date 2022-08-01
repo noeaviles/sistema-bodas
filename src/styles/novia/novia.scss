@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
     height: 100%;
 }
     .Novia-header {
@@ -32,6 +31,7 @@
 
     .Novia-container {
         display: flex;
+        margin-bottom: 20px;
     }
     .Novia-menu {
         position:fixed;
@@ -95,7 +95,6 @@
         display: flex;
         flex-direction: column;
         padding: 0.5rem;
-        margin-top: 95px;
     }
 
     .Novia-cards {

@@ -1,29 +1,13 @@
 import React from 'react'
-import AsideMenu from '../components/novia/AsideMenu'
-import HeaderUsers from '../components/novia/HeaderUsers'
-import {connect} from 'react-redux';
-import {handleMenu} from '../redux/action'
-import iconPregunta from '../assets/iconoPregunta.png'
-const mapStateToProps = (state)=>{
-    return {
-        menuActive: state.reducer.menuActive,
-    }
-}
+import iconPregunta from '../assets/iconoPregunta.png';
 
-
-
-const NoviaBasicos = ( {menuActive,handleMenu} ) => {
+const NoviaBasicos = () => {
     
   return (
-    <div className='Novia'>
-        <HeaderUsers/>
-        <div className='Novia-container'>
-          <AsideMenu/>
-          <div className='Novia-main'>
+          <div className='Dashboard-main'>
                 <form className='GlobalForm'>
-
                     <div className='GlobalForm-pregunta'>
-                    <label htmlFor="" className='GlobalForm-label'> <p className='GlobalForm-p'>¿Fecha de la boda? </p><span className='GlobalForm-icono'><img src={iconPregunta} alt="" /></span> </label>
+                        <label htmlFor="" className='GlobalForm-label'> <p className='GlobalForm-p'>¿Fecha de la boda? </p><span className='GlobalForm-icono'><img src={iconPregunta} alt="" /></span> </label>
                         <input type="text"  className='GlobalForm-input'/>
                     </div>
 
@@ -71,10 +55,8 @@ const NoviaBasicos = ( {menuActive,handleMenu} ) => {
 
                 </form>
           </div>
-        </div>
-        
-    </div>
+  
   )
 }
 
-export default connect(mapStateToProps,{handleMenu})( NoviaBasicos)
+export default NoviaBasicos

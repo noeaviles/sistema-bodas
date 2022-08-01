@@ -3,8 +3,6 @@ import heart from '../assets/heart.png'
 import people from '../assets/people.png'
 import check from '../assets/check.png'
 import mail from '../assets/Mail.png'
-import AsideMenu from '../components/novia/AsideMenu';
-import HeaderUsers from '../components/novia/HeaderUsers'
 
 
 const InterfazNovia = ( ) => {
@@ -13,11 +11,7 @@ const InterfazNovia = ( ) => {
   return (
     <div className='Novia'>
 
-        <HeaderUsers/>
-
         <div className='Novia-container'>
-
-          <AsideMenu/>
 
           <div className='Novia-main'>
 
